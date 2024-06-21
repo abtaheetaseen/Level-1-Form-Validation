@@ -29,6 +29,10 @@ function App() {
       return toast.error("Please select one for attending with guest")
     }
 
+    if(visitorsAge <= 0){
+      return toast.error("Age must be greater than 0")
+    }
+
     const data = {
       name,
       email,
